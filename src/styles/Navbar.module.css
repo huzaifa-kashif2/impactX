@@ -1,0 +1,131 @@
+/* === Base Navbar === */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: rgba(28, 28, 28, 0.85);
+  color: var(--color-offwhite);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-default);
+}
+
+/* === Logo === */
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: var(--font-primary);
+  color: var(--color-yellow);
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* === Desktop Nav Links === */
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  color: var(--color-offwhite);
+  transition: all 0.3s ease;
+}
+
+.navItem::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background-color: var(--color-yellow);
+  transition: width 0.3s ease;
+}
+
+.navItem:hover::after {
+  width: 100%;
+}
+
+/* === Active Nav Item === */
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  color: var(--color-yellow);
+}
+
+.active::after {
+  width: 100%;
+}
+
+/* === Hamburger Icon === */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 1001;
+  color: var(--color-yellow);
+}
+
+/* === Mobile Styles === */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navLinks {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 70%;
+    height: calc(100vh - 70px);
+    background-color: var(--color-charcoal);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 1rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+        height:100vh;
+
+    display: flex;
+  }
+
+  .navLinks.open {
+    transform: translateX(0);
+  }
+
+  .navItem {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoImg {
+  height: autopx;
+  width: 100px;
+  object-fit: cover;
+}
+
+.logoText {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}

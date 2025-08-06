@@ -1,0 +1,64 @@
+.partnersSection {
+  position: relative;
+  background-image: url("/assets/partners-bg.jpg"); /* Replace with your background */
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 2rem;
+  color: var(--color-offwhite);
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(27, 59, 111, 0.85); /* Deep blue overlay */
+  padding: 4rem 2rem;
+  border-radius: var(--truck-border-radius-large);
+  box-shadow: var(--shadow-truck);
+}
+
+.heading {
+  font-family: var(--font-decorative);
+  color: var(--color-yellow);
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  text-shadow: var(--text-glow-yellow);
+}
+
+.text {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  color: var(--color-offwhite);
+  font-family: var(--font-primary);
+}
+
+.logoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.logoCard {
+  background: rgb(255, 180, 173);
+  border: 3px solid var(--color-red);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  box-shadow: var(--shadow-default);
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logoCard:hover {
+  transform: scale(1.05);
+  box-shadow: var(--card-hover-shadow);
+}
+
+.logoCard img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}

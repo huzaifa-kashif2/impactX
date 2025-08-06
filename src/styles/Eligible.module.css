@@ -1,0 +1,74 @@
+.routeSection {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: var(--color-offwhite);
+  font-family: var(--font-primary);
+}
+
+.routeSection h2 {
+  text-align: center;
+  font-size: 42px;
+  color: var(--color-pink);
+  font-family: 'Georgia', serif;
+  margin-bottom: 60px;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 50px;
+  border-left: 5px dashed var(--color-orange);
+  padding-left: 30px;
+}
+
+.timelineEntry {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.even {
+  margin-left: 60px;
+}
+
+.icon {
+  font-size: 32px;
+  position: absolute;
+  left: -60px;
+  top: 0;
+}
+
+.entryContent {
+  background-color: #FFF3E0;
+  border-left: 5px solid var(--color-orange);
+  padding: 15px 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-default);
+}
+
+.entryContent h3 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--color-charcoal);
+}
+
+.entryContent p {
+  font-style: italic;
+  font-size: 14px;
+  color: #616161;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+
+  .even {
+    margin-left: 0;
+  }
+
+  .icon {
+    left: -40px;
+  }
+}

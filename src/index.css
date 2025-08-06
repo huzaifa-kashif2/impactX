@@ -1,0 +1,44 @@
+/* Root color variables */
+:root {
+  /* 🎯 Updated existing variables with Truck Art tones */
+  --color-red: #D32F2F;         /* Stronger red for borders/details */
+  --color-yellow: #d4c646;      /* Bright Yellow - traditional truck art */
+  --color-green: #388E3C;       /* B  righter, more vibrant green */
+  --color-blue: #4169E1;        /* Royal Blue - for headings */
+  --color-orange: #FF5722;      /* Used in buttons and highlights */
+
+  /* 🎉 Existing Accent Colors - kept or tweaked */
+  --color-teal: #00BFA6;        /* Good fit - bright and festive */
+  --color-pink: #E91E63;        /* Pink for buttons or icons */
+  --color-offwhite: #FFF8E1;    /* Creamy background for form fields */
+  --color-black: #000000;       /* No change */
+  --color-charcoal: #333333;    /* Slightly lighter for input labels */
+
+  /* ✨ Faun color as a soft neutral */
+  --color-faun: #D8C6A4;        /* Soft beige, for backgrounds or containers */
+
+  /* 🎨 Themed Additions */
+  --color-background-deepblue: #1B3B6F;       /* For outer backgrounds */
+  --color-overlay-dark: rgba(0, 0, 0, 0.5);    /* For image overlays */
+  --color-border-multicolor: linear-gradient(90deg, #FF3E96, #00BFA6, #FDCB00, #C8102E, #007A3D);
+
+  /* 🧢 Typography */
+  --font-primary: 'Poppins', sans-serif;
+  --font-truck-bold: 'Luckiest Guy', cursive;    /* Add via Google Fonts */
+  --font-decorative: 'Baloo 2', cursive;         /* For headings/buttons */
+
+  /* 🪞 Layout & Effects */
+  --shadow-default: 0 4px 20px rgba(0, 0, 0, 0.2);
+  --shadow-truck: 0 8px 30px rgba(0, 0, 0, 0.3);
+  --border-radius: 8px;
+  --truck-border-radius-large: 16px;
+}
+
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
