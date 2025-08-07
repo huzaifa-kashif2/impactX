@@ -1,6 +1,6 @@
 .partnersSection {
   position: relative;
-  background-image: url("/assets/partners-bg.jpg"); /* Replace with your background */
+  background-image: url("/assets/partners-bg.jpg"); 
   background-size: cover;
   background-position: center;
   padding: 6rem 2rem;
@@ -9,7 +9,7 @@
 }
 
 .overlay {
-  background-color: rgba(27, 59, 111, 0.85); /* Deep blue overlay */
+  background-color: rgba(27, 59, 111, 0.85);
   padding: 4rem 2rem;
   border-radius: var(--truck-border-radius-large);
   box-shadow: var(--shadow-truck);
@@ -39,7 +39,7 @@
 }
 
 .logoCard {
-  background: rgb(255, 180, 173);
+  background: white;
   border: 3px solid var(--color-red);
   border-radius: var(--border-radius);
   padding: 1rem;

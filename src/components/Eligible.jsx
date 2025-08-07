@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/Eligible.module.css'; // Adjust the path as necessary
+import styles from '../styles/Eligible.module.css'; 
 
 const entries = [
   { icon: '🎨', title: 'Arts', quote: '"فن کی طاقت سے انقلاب!"' },

@@ -29,8 +29,11 @@ export default function Partners() {
         </p>
         <div className={styles.logoGrid}>
           {brands.map((brand) => (
-            <div className={styles.logoCard} key={brand.name}>
-              <img src={brand.image} alt={brand.name} />
+<div
+  className={styles.logoCard}
+  key={brand.name}
+  style={brand.name === "Juno" ? { backgroundColor: "red" } : {}}
+>              <img src={brand.image} alt={brand.name} />
             </div>
           ))}
         </div>

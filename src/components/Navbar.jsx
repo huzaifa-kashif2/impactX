@@ -7,7 +7,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const navItems = [
   { name: "home", nav_name: "Home" },
   { name: "about", nav_name: "About" },
-  { name: "offerings", nav_name: "Offerings" },
+  { name: "offerings", nav_name: "Why Us" },
   { name: "sectors", nav_name: "Sectors" },
   { name: "partners", nav_name: "Partners" },
   { name: "team", nav_name: "Team" },
@@ -29,7 +29,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.logoContainer}>
         <img
-          src={logo} // Change this to your actual image path if needed
+          src={logo} 
           alt="ImpactX Logo"
           className={styles.logoImg}
         />
@@ -40,10 +40,10 @@ export default function Navbar() {
       </div>
 
       <ul className={`${styles.navLinks} ${menuOpen ? styles.open : ""}`}>
-{navItems.map((item) => (
-  <li key={item.name} className={styles.navItem}>
-    <Link
-      to={item.name}
+        {navItems.map((item) => (
+          <li key={item.name} className={styles.navItem}>
+            <Link
+              to={item.name}
               smooth={true}
               duration={200}
               spy={true}
@@ -51,7 +51,7 @@ export default function Navbar() {
               activeClass={styles.active}
               onClick={closeMenu}
             >
-{item.nav_name}
+              {item.nav_name}
             </Link>
           </li>
         ))}

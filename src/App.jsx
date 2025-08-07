@@ -8,7 +8,7 @@ import Teams from "./components/Teams";
 import Home from "./components/Home";
 import About from "./components/About";
 import Offerings from "./components/Offerings";
-import Eligible from "./components/Eligible"; // Assuming this is the correct import path
+import Eligible from "./components/Eligible"; 
 import Partners from "./components/Partners";
 export default function App() {
   return (

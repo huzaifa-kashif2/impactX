@@ -1,4 +1,4 @@
-/* === Base Navbar === */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -14,7 +14,7 @@
   box-shadow: var(--shadow-default);
 }
 
-/* === Logo === */
+
 .logo {
   font-size: 1.6rem;
   font-weight: 700;
@@ -24,7 +24,6 @@
   z-index: 1001;
 }
 
-/* === Desktop Nav Links === */
 .navLinks {
   list-style: none;
   display: flex;
@@ -57,7 +56,6 @@
   width: 100%;
 }
 
-/* === Active Nav Item === */
 .active {
   font-weight: bold;
   text-decoration: underline;
@@ -69,7 +67,6 @@
   width: 100%;
 }
 
-/* === Hamburger Icon === */
 .hamburger {
   display: none;
   font-size: 1.8rem;
@@ -78,7 +75,6 @@
   color: var(--color-yellow);
 }
 
-/* === Mobile Styles === */
 @media (max-width: 768px) {
   .hamburger {
     display: block;

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/Offerings.module.css'; // Adjust the path as necessary
+import styles from '../styles/Offerings.module.css'; 
 import { FaBrain, FaMoneyBillWave, FaUsers } from 'react-icons/fa';
 
 export default function Offerings() {

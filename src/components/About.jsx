@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../styles/About.module.css'; // Adjust the path as necessary
-import aboutImage from '../assets/about-us.jpg'; // replace with your image
+import styles from '../styles/About.module.css'; 
+import aboutImage from '../assets/about-us.jpg'; 
 
 export default function About() {
   return (

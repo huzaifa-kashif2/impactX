@@ -9,7 +9,6 @@
   position: relative;
   z-index: 1;
   background-color: #FFF8E1;
-  margin-top:50px;
 }
 
 .contactSection::before,
@@ -116,7 +115,4 @@ button:hover {
     height: 60px;
     background-size: cover;
   }
-}
-.mainSection{
-  height:75vh;
 }

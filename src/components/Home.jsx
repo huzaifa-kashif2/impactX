@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
-import logo from "../assets/logo.png"; // Update path as needed
+import logo from "../assets/logo.png"; 
 import { scroller } from 'react-scroll';
 
 
