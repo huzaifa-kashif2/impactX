@@ -1,4 +1,3 @@
-
 .navbar {
   position: fixed;
   top: 0;
@@ -14,14 +13,21 @@
   box-shadow: var(--shadow-default);
 }
 
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
-.logo {
-  font-size: 1.6rem;
-  font-weight: 700;
-  font-family: var(--font-primary);
-  color: var(--color-yellow);
-  cursor: pointer;
-  z-index: 1001;
+.logoImg {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+.logoImg:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor:pointer;
 }
 
 .navLinks {
@@ -85,17 +91,15 @@
     top: 70px;
     right: 0;
     width: 70%;
-    height: calc(100vh - 70px);
+    height: 100vh;
     background-color: var(--color-charcoal);
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding: 1rem 1rem;
+    padding: 1rem;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
-        height:100vh;
-
     display: flex;
   }
 
@@ -107,21 +111,4 @@
     font-size: 1.5rem;
     margin: 0;
   }
-}
-.logoContainer {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.logoImg {
-  height: autopx;
-  width: 100px;
-  object-fit: cover;
-}
-
-.logoText {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
 }

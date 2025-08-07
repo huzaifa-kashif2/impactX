@@ -6,7 +6,6 @@ export default function Contact() {
     <div className={styles.mainSection}>
     <section className={styles.contactSection}>
       <h2>Get In Touch</h2>
-      <p className={styles.urduLine}>"آئیے بات کریں — ہم سننے کو تیار ہیں!"</p>
 
       <form action="https://formspree.io/f/your-form-id" method="POST">
         <div className={styles.formGrid}>

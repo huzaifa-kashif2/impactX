@@ -1,25 +1,27 @@
 :root {
-  --color-red: #D32F2F;
-  --color-yellow: #d4c646;
-  --color-green: #388E3C;
-  --color-blue: #4169E1;
-  --color-orange: #FF5722;
-  --color-teal: #00BFA6;
-  --color-pink: #E91E63;
+  --color-red: #C8102E; 
+  --color-yellow: #FDCB00; 
+  --color-green: #007A3D;
+  --color-blue: #005BBB; 
+  --color-orange: #FF6F00;
+  --color-teal: #00BFA6; 
+  --color-pink: #FF3E96; 
   --color-offwhite: #FFF8E1;
   --color-black: #000000;
-  --color-charcoal: #333333;
-  --color-faun: #D8C6A4;
+  --color-charcoal: #1C1C1C; 
+  --color-faun: #D8C6A4; 
   --color-background-deepblue: #1B3B6F;
   --color-overlay-dark: rgba(0, 0, 0, 0.5);
-  --color-border-multicolor: linear-gradient(90deg, #FF3E96, #00BFA6, #FDCB00, #C8102E, #007A3D);
-  --font-primary: 'Poppins', sans-serif;
-  --font-truck-bold: 'Luckiest Guy', cursive;
-  --font-decorative: 'Baloo 2', cursive;
+  --color-border-multicolor: linear-gradient(90deg, #FF3E96, #00BFA6, #FDCB00, #C8102E, #007A3D); 
   --shadow-default: 0 4px 20px rgba(0, 0, 0, 0.2);
   --shadow-truck: 0 8px 30px rgba(0, 0, 0, 0.3);
   --border-radius: 8px;
   --truck-border-radius-large: 16px;
+  --color-white:white;
+}
+::selection {
+  background: var(--color-yellow);
+  color: var(--color-charcoal);
 }
 
 * {
@@ -27,4 +29,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+
 }

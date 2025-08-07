@@ -1,8 +1,7 @@
 .teamSection {
   text-align: center;
   padding: 4rem 2rem;
-  font-family: var(--font-primary);
-  background-color: white;
+  background-color: var(--color-offwhite);
 }
 
 .heading {
@@ -10,13 +9,14 @@
   font-weight: 600;
   color: var(--color-charcoal);
   margin-bottom: 3rem;
+  font-family: var(--font-primary);
 }
 
 .teamContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .card {
@@ -41,6 +41,7 @@
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1rem;
+  border: 3px solid var(--color-yellow);
 }
 
 .name {
@@ -48,6 +49,7 @@
   color: var(--color-charcoal);
   font-size: 1rem;
   margin: 0.5rem 0;
+  font-family: var(--font-primary);
 }
 
 .role {
@@ -57,4 +59,34 @@
   padding: 0.3rem 0.8rem;
   border-radius: var(--border-radius);
   font-size: 0.85rem;
+  font-family: var(--font-primary);
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 180px;
+    padding: 1rem 0.5rem;
+  }
+
+  .image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .name {
+    font-size: 0.95rem;
+  }
+
+  .role {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .teamSection {
+    padding: 3rem 1rem;
+  }
 }

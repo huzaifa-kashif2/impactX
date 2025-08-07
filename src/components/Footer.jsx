@@ -6,10 +6,10 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.icons}>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/impactxpk?igsh=MTdwMXl5NG5rcDIyZQ==" target="_blank" rel="noopener noreferrer">
           <FaInstagram />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/company/impactxpk/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">

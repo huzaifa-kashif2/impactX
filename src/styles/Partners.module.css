@@ -1,6 +1,6 @@
 .partnersSection {
   position: relative;
-  background-image: url("/assets/partners-bg.jpg"); 
+  background-image: url("/assets/partners-bg.jpg");
   background-size: cover;
   background-position: center;
   padding: 6rem 2rem;
@@ -11,16 +11,16 @@
 .overlay {
   background-color: rgba(27, 59, 111, 0.85);
   padding: 4rem 2rem;
-  border-radius: var(--truck-border-radius-large);
-  box-shadow: var(--shadow-truck);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-default);
 }
 
 .heading {
-  font-family: var(--font-decorative);
   color: var(--color-yellow);
   font-size: 2.8rem;
   margin-bottom: 1.5rem;
-  text-shadow: var(--text-glow-yellow);
+  text-shadow: 0 0 10px var(--color-yellow);
+  font-family: var(--font-primary);
 }
 
 .text {
@@ -39,7 +39,7 @@
 }
 
 .logoCard {
-  background: white;
+  background: var(--color-white);
   border: 3px solid var(--color-red);
   border-radius: var(--border-radius);
   padding: 1rem;
@@ -54,11 +54,34 @@
 
 .logoCard:hover {
   transform: scale(1.05);
-  box-shadow: var(--card-hover-shadow);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
 }
 
 .logoCard img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .logoCard {
+    width: 120px;
+    height: 120px;
+  }
+
+  .overlay {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .partnersSection {
+    padding: 4rem 1rem;
+  }
 }

@@ -28,11 +28,16 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logoContainer}>
-        <img
-          src={logo} 
-          alt="ImpactX Logo"
-          className={styles.logoImg}
-        />
+        <Link
+          to="home"
+          smooth={true}
+          duration={200}
+          spy={true}
+          offset={-80}
+          onClick={closeMenu}
+        >
+          <img src={logo} alt="ImpactX Logo" className={styles.logoImg} />
+        </Link>
       </div>
 
       <div className={styles.hamburger} onClick={toggleMenu}>

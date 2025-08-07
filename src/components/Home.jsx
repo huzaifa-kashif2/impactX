@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
-import logo from "../assets/logo.png"; 
-import { scroller } from 'react-scroll';
-
+import logo from "../assets/logo.png";
+import { scroller } from "react-scroll";
 
 export default function Home() {
   return (
@@ -15,18 +14,18 @@ export default function Home() {
           is Pakistan’s first Co-working Space & Incubation Center of its kind,
           dedicated to empowering the <span>Creative Industry</span>.
         </h1>{" "}
-<button
-  className={styles.cta}
-  onClick={() => {
-    scroller.scrollTo('apply', {
-      duration: 500,
-      delay: 0,
-      smooth: 'easeInOutQuart',
-    });
-  }}
->
-  Apply Now 🎨
-</button>
+        <button
+          className={styles.cta}
+          onClick={() => {
+            scroller.scrollTo("apply", {
+              duration: 500,
+              delay: 0,
+              smooth: "easeInOutQuart",
+            });
+          }}
+        >
+          Apply Now 🎨
+        </button>
       </div>
     </section>
   );

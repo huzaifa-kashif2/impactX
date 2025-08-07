@@ -1,24 +1,24 @@
-import React from 'react';
-import styles from '../styles/Eligible.module.css'; 
+import React from 'react'
+import styles from '../styles/Eligible.module.css'
 
 const entries = [
-  { icon: '🎨', title: 'Arts', quote: '"فن کی طاقت سے انقلاب!"' },
-  { icon: '👗', title: 'Fashion', quote: '"لباس میں کہانی چھپی ہے"' },
-  { icon: '🧶', title: 'Crafts', quote: '"ہنر میں حسن بسا ہے"' },
-  { icon: '🎭', title: 'Performing Arts / Theatre', quote: '"سٹیج پہ زندگی بولتی ہے"' },
-  { icon: '🎥', title: 'Film', quote: '"کہانی سے روشنی تک"' },
-  { icon: '📸', title: 'Photography / Videography', quote: '"ہر تصویر ایک لمحہ ہے"' },
-  { icon: '🧵', title: 'Textiles', quote: '"رنگ، دھاگہ اور روایت"' },
-  { icon: '🎨', title: 'Design', quote: '"تخلیق ہر لکیر میں"' },
-  { icon: '🖌', title: 'Fine Arts', quote: '"تصویر میں جذبے کی زبان"' },
-  { icon: '📺', title: 'Media', quote: '"الفاظ اور آواز کا جادو"' },
-  { icon: '💍', title: 'Jewellery', quote: '"زیور میں چھپی تہذیب"' },
-];
+  { icon: '🎨', title: 'Arts' },
+  { icon: '👗', title: 'Fashion' },
+  { icon: '🧶', title: 'Crafts' },
+  { icon: '🎭', title: 'Performing Arts / Theatre' },
+  { icon: '🎥', title: 'Film' },
+  { icon: '📸', title: 'Photography / Videography' },
+  { icon: '🧵', title: 'Textiles' },
+  { icon: '🎨', title: 'Design' },
+  { icon: '🖌', title: 'Fine Arts' },
+  { icon: '📺', title: 'Media' },
+  { icon: '💍', title: 'Jewellery' },
+]
 
 export default function Eligible() {
   return (
     <section className={styles.routeSection}>
-      <h2> Eligible Sectors</h2>
+      <h2>Eligible Sectors</h2>
       <div className={styles.timeline}>
         {entries.map((entry, index) => (
           <div
@@ -28,11 +28,11 @@ export default function Eligible() {
             <div className={styles.icon}>{entry.icon}</div>
             <div className={styles.entryContent}>
               <h3>{entry.title}</h3>
-              <p>{entry.quote}</p>
+              <p>Category included</p>
             </div>
           </div>
         ))}
       </div>
     </section>
-  );
+  )
 }

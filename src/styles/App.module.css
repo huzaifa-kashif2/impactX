@@ -1,14 +1,14 @@
 .section {
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  scroll-margin-top: 100px; 
+  scroll-margin-top: 100px;
   background-color: var(--color-black);
   color: var(--color-offwhite);
-  font-family: var(--font-primary);
   transition: background 0.5s ease, color 0.5s ease;
 }
 
@@ -32,10 +32,10 @@
   text-align: center;
   line-height: 1.6;
 }
+
 @media (max-width: 768px) {
   .section {
     padding: 2rem 1rem;
-    text-align: center;
   }
 
   .section h1 {
@@ -44,5 +44,16 @@
 
   .section p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section h1 {
+    font-size: 1.7rem;
+  }
+
+  .section p {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
   }
 }

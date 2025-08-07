@@ -1,24 +1,24 @@
 .offeringsSection {
-  background-color: rgb(255,180,153);
+  background-color: var(--color-orange);
   padding: 80px 20px;
   text-align: center;
-  font-family: var(--font-primary);
 }
 
 .heading {
-  color: white;
+  color: var(--color-offwhite);
   font-size: 2.8rem;
   margin-bottom: 10px;
-  
+  font-family: var(--font-primary);
 }
 
 .subheading {
   font-size: 1.2rem;
-  color: white;
+  color: var(--color-offwhite);
   margin-bottom: 50px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  font-family: var(--font-primary);
 }
 
 .cardsContainer {
@@ -29,13 +29,14 @@
 }
 
 .card {
-  background-color: #fff;
+  background-color: var(--color-offwhite);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-default);
   padding: 30px 25px;
   width: 300px;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: var(--font-primary);
 }
 
 .card:hover {
@@ -58,4 +59,23 @@
 .icon {
   font-size: 2rem;
   color: var(--color-teal);
+}
+
+@media (max-width: 768px) {
+  .cardsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 1rem;
+  }
 }

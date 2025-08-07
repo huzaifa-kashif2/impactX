@@ -3,15 +3,14 @@
   max-width: 1000px;
   margin: auto;
   background-color: var(--color-offwhite);
-  font-family: var(--font-primary);
 }
 
 .routeSection h2 {
   text-align: center;
   font-size: 42px;
   color: var(--color-pink);
-  font-family: 'Georgia', serif;
   margin-bottom: 60px;
+  font-family: var(--font-primary);
 }
 
 .timeline {
@@ -38,7 +37,7 @@
 }
 
 .entryContent {
-  background-color: #FFF3E0;
+  background-color: var(--color-faun);
   border-left: 5px solid var(--color-orange);
   padding: 15px 20px;
   border-radius: var(--border-radius);
@@ -49,13 +48,13 @@
   margin: 0;
   font-size: 20px;
   color: var(--color-charcoal);
+  font-family: var(--font-primary);
 }
 
 .entryContent p {
   font-style: italic;
   font-size: 14px;
-  color: #616161;
-  margin-top: 5px;
+  color: var(--color-charcoal);
 }
 
 @media (max-width: 768px) {
@@ -70,5 +69,17 @@
 
   .icon {
     left: -40px;
+  }
+
+  .routeSection h2 {
+    font-size: 30px;
+  }
+
+  .entryContent h3 {
+    font-size: 18px;
+  }
+
+  .entryContent p {
+    font-size: 13px;
   }
 }

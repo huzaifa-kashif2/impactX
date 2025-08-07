@@ -8,10 +8,12 @@
   width: 98.8vw;
   display: flex;
   align-items: center;
-  justify-content: center;
   color: var(--color-offwhite);
-  font-family: 'Baloo 2', cursive;
   overflow: hidden;
+  justify-content: flex-start;
+  padding-left: 5%;
+  padding-top: 5%;
+  flex-direction: row;
 }
 
 .overlay {
@@ -58,13 +60,13 @@
   z-index: 2;
   max-width: 800px;
   padding: 20px;
-  text-align: center;
+  text-align: left;
+  align-items: flex-start;
 }
 
 .heading {
   font-size: 2.8rem;
-  font-family: 'Luckiest Guy', cursive;
-  color: var(--color-yellow);
+  color: var(--color-red);
   text-shadow: 3px 3px var(--color-charcoal);
   display: inline-block;
   align-items: center;
@@ -96,10 +98,61 @@
   box-shadow: var(--shadow-default);
   cursor: pointer;
   transition: all 0.3s ease;
-  font-family: 'Baloo 2', cursive;
 }
 
 .cta:hover {
   background-color: var(--color-pink);
   transform: scale(1.05);
+}
+
+/* ✅ Responsive Styling */
+@media (max-width: 768px) {
+  .heroSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 5%;
+    height: auto;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  .logo {
+    width: 60px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .parrotIcon {
+    width: 70px;
+    top: 10%;
+    left: 2%;
+  }
+
+  .lotusIcon {
+    width: 40px;
+    bottom: 5%;
+    right: 2%;
+  }
+
+  .content {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .inlineLogo {
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .cta {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
 }

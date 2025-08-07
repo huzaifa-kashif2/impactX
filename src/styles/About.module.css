@@ -6,7 +6,6 @@
   padding: 60px 40px;
   background-color: var(--color-offwhite);
   color: var(--color-charcoal);
-  font-family: var(--font-primary);
   gap: 100px;
   flex-wrap: wrap;
 }
@@ -32,7 +31,7 @@
 
 .heading {
   font-size: 2.5rem;
-  color: var(--color-blue);
+  color: var(--color-red);
   margin-bottom: 20px;
 }
 
@@ -40,4 +39,27 @@
   font-size: 1.1rem;
   line-height: 1.7;
   color: var(--color-charcoal);
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .textContainer {
+    min-width: unset;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 2rem;
+    color: var(--color-red);
+  }
+
+  .description {
+    font-size: 1rem;
+  }
 }
