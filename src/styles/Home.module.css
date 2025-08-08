@@ -105,7 +105,6 @@
   transform: scale(1.05);
 }
 
-/* ✅ Responsive Styling */
 @media (max-width: 768px) {
   .heroSection {
     flex-direction: column;
@@ -115,6 +114,7 @@
     height: auto;
     min-height: 100vh;
     text-align: center;
+    width: 100vw;
   }
 
   .logo {
