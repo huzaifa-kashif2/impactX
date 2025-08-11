@@ -2,9 +2,9 @@ import React from 'react';
 import styles from '../styles/Teams.module.css';
 
 import saleem from '../assets/saleem.jpg';
-import muneeb from '../assets/muneeb.png';
+import muneeb from '../assets/muneeb.jpg';
 import shoaib from '../assets/shoaib.jpg';
-import mahnoor from '../assets/mahnoor.png';
+import mahnoor from '../assets/mahnoor.jpg';
 
 export default function Teams() {
   const teamMembers = [

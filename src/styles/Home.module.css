@@ -14,6 +14,7 @@
   padding-left: 5%;
   padding-top: 5%;
   flex-direction: row;
+  filter: brightness(1.4); 
 }
 
 .overlay {
@@ -82,7 +83,7 @@
 .inlineLogo {
   display: inline-block;
   vertical-align: middle;
-  height: 4rem;
+  height: 6rem;
   margin-right: 0.5rem;
 }
 
@@ -146,7 +147,7 @@
   }
 
   .inlineLogo {
-    height: 2.5rem;
+    height: 4rem;
     margin-bottom: 0.5rem;
   }
 

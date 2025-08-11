@@ -3,7 +3,7 @@
   top: 0;
   width: 100%;
   padding: 1rem 2rem;
-  background: rgba(28, 28, 28, 0.85);
+  background: rgba(94, 93, 93, 0.5);
   color: var(--color-offwhite);
   display: flex;
   justify-content: space-between;
@@ -20,7 +20,7 @@
 }
 
 .logoImg {
-  width: 100px;
+  width: 150px;
   height: auto;
   object-fit: cover;
 }

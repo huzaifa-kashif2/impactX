@@ -5,17 +5,16 @@ import laamImg from "../assets/laam.png";
 import lamaImg from "../assets/lama.png";
 import vceelaImg from "../assets/vceela.webp";
 import pifdImg from "../assets/pifd.png";
-import uopImg from "../assets/uop.png";
+import uheImg from "../assets/uhe.jpg";
 
 const brands = [
-  { name: "Juno", image: junoImg },
-  { name: "Laam", image: laamImg },
-  { name: "Lama", image: lamaImg },
-  { name: "Vceela", image: vceelaImg },
   { name: "PIFD", image: pifdImg },
-  { name: "UOP", image: uopImg },
+  { name: "UHE", image: uheImg },
+  { name: "Lama", image: lamaImg },
+  { name: "Laam", image: laamImg },
+  { name: "Vceela", image: vceelaImg },
+  { name: "Juno", image: junoImg },
 ];
-
 
 export default function Partners() {
   return (
@@ -23,17 +22,20 @@ export default function Partners() {
       <div className={styles.overlay}>
         <h2 className={styles.heading}>OUR PARTNERS</h2>
         <p className={styles.text}>
-          At ImpactX, we proudly collaborate with visionary institutions that share our mission
-          to empower Pakistan’s creative industry. These partnerships allow us to support,
-          connect, and grow the next generation of artists, innovators, and cultural entrepreneurs.
+          At ImpactX, we proudly collaborate with visionary institutions that
+          share our mission to empower Pakistan’s creative industry. These
+          partnerships allow us to support, connect, and grow the next
+          generation of artists, innovators, and cultural entrepreneurs.
         </p>
         <div className={styles.logoGrid}>
           {brands.map((brand) => (
-<div
-  className={styles.logoCard}
-  key={brand.name}
-  style={brand.name === "Juno" ? { backgroundColor: "red" } : {}}
->              <img src={brand.image} alt={brand.name} />
+            <div
+              className={styles.logoCard}
+              key={brand.name}
+              style={brand.name === "Juno" ? { backgroundColor: "red" } : {}}
+            >
+              {" "}
+              <img src={brand.image} alt={brand.name} />
             </div>
           ))}
         </div>

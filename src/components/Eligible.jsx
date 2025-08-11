@@ -2,17 +2,20 @@ import React from 'react'
 import styles from '../styles/Eligible.module.css'
 
 const entries = [
-  { icon: '🎨', title: 'Arts' },
+  { icon: '🎨', title: 'Painting' },
   { icon: '👗', title: 'Fashion' },
-  { icon: '🧶', title: 'Crafts' },
-  { icon: '🎭', title: 'Performing Arts / Theatre' },
+  { icon: '🧵', title: 'Crafts' },
+  { icon: '🎭', title: 'Performing Arts' },
+  { icon: '🧶', title: 'Textiles' },
+  { icon: '🏛️', title: 'Architecture' },
+  { icon: '🥁', title: 'Music' },
   { icon: '🎥', title: 'Film' },
-  { icon: '📸', title: 'Photography / Videography' },
-  { icon: '🧵', title: 'Textiles' },
-  { icon: '🎨', title: 'Design' },
-  { icon: '🖌', title: 'Fine Arts' },
-  { icon: '📺', title: 'Media' },
-  { icon: '💍', title: 'Jewellery' },
+  { icon: '📸', title: 'Photography' },
+  { icon: '📹', title: 'Videography' },
+  { icon: '🖥️', title: 'Media' },
+  { icon: '✏️', title: 'Design' },
+  { icon: '🏠', title: 'Interior Design' },
+  { icon: '💍', title: 'Jewelry' },
 ]
 
 export default function Eligible() {
@@ -28,7 +31,6 @@ export default function Eligible() {
             <div className={styles.icon}>{entry.icon}</div>
             <div className={styles.entryContent}>
               <h3>{entry.title}</h3>
-              <p>Category included</p>
             </div>
           </div>
         ))}
