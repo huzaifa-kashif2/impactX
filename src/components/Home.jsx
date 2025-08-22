@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
 import logo from "../assets/logo.png";
-import { scroller } from "react-scroll";
 
 export default function Home() {
   return (
@@ -13,19 +12,15 @@ export default function Home() {
           <img src={logo} alt="ImpactX Logo" className={styles.inlineLogo} />
           is Pakistan’s first Co-working Space & Incubation Center of its kind,
           dedicated to empowering the <span>Creative Industry</span>.
-        </h1>{" "}
-        <button
-          className={styles.cta}
-          onClick={() => {
-            scroller.scrollTo("apply", {
-              duration: 500,
-              delay: 0,
-              smooth: "easeInOutQuart",
-            });
-          }}
+        </h1>
+        <a
+          href="https://docs.google.com/forms/d/11JuhCAkRe85Qq8mIhPBSWd604xx7oZj3-7DKw_NyUmo/viewform?ts=68a816bb&edit_requested=true"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.ctaLink}
         >
           Apply Now 🎨
-        </button>
+        </a>
       </div>
     </section>
   );

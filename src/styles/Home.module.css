@@ -157,3 +157,21 @@
     margin-top: 20px;
   }
 }
+.ctaLink {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: var(--color-orange);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-default);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ctaLink:hover {
+  background-color: var(--color-pink);
+  transform: scale(1.05);
+}
