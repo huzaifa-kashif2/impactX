@@ -10,6 +10,7 @@ import About from "./components/About";
 import Offerings from "./components/Offerings";
 import Eligible from "./components/Eligible"; 
 import Partners from "./components/Partners";
+import PhotoSlider from "./components/PhotoSlider";
 export default function App() {
   return (
     <div>
@@ -26,6 +27,11 @@ export default function App() {
       <Element name="offerings" >
         <Offerings />
       </Element>
+
+            <Element name="photoslider">
+        <PhotoSlider />
+      </Element>
+
 
       <Element name="sectors">
         <Eligible />

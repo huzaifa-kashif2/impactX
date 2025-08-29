@@ -6,6 +6,8 @@ import lamaImg from "../assets/lama.png";
 import vceelaImg from "../assets/vceela.webp";
 import pifdImg from "../assets/pifd.png";
 import uheImg from "../assets/uhe.jpg";
+import lcwuImg from "../assets/lcwu.png";
+import bicImg from "../assets/bic.png";
 
 const brands = [
   { name: "PIFD", image: pifdImg },
@@ -14,6 +16,8 @@ const brands = [
   { name: "Laam", image: laamImg },
   { name: "Vceela", image: vceelaImg },
   { name: "Juno", image: junoImg },
+  { name: "LCWU", image: lcwuImg },
+  {name: "BIC", image: bicImg},
 ];
 
 export default function Partners() {

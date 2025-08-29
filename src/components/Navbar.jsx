@@ -8,10 +8,12 @@ const navItems = [
   { name: "home", nav_name: "Home" },
   { name: "about", nav_name: "About" },
   { name: "offerings", nav_name: "Why Us" },
+   {name:"photoslider",nav_name:"ImpactX Wall"},
   { name: "sectors", nav_name: "Sectors" },
   { name: "partners", nav_name: "Partners" },
   { name: "team", nav_name: "Team" },
   { name: "apply", nav_name: "Apply" },
+ 
 ];
 
 export default function Navbar() {

@@ -1,0 +1,45 @@
+.scrollerWrap {
+  width: 100%;
+  overflow: hidden;
+  background: #fdfdfd;
+  padding: 1rem 0;
+}
+
+.scroller {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.scrollerItem {
+  flex: 0 0 auto;
+  width: 20vw;               /* responsive width (20% of viewport width) */
+  max-width: 250px;          /* cap so it doesn’t get too big on large screens */
+  min-width: 160px;          /* keeps them usable on mobile */
+  aspect-ratio: 4 / 3;       /* height adjusts automatically */
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: #f3f3f3;       /* 👈 fixed background for all tiles */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrollerItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;        /* keep full image visible */
+  background: #f3f3f3;        /* 👈 background color even behind transparent images */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

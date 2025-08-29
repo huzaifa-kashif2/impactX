@@ -22,16 +22,11 @@ export default function Eligible() {
   return (
     <section className={styles.routeSection}>
       <h2>Eligible Sectors</h2>
-      <div className={styles.timeline}>
+      <div className={styles.cardsGrid}>
         {entries.map((entry, index) => (
-          <div
-            key={index}
-            className={`${styles.timelineEntry} ${index % 2 === 1 ? styles.even : ''}`}
-          >
+          <div key={index} className={styles.card}>
             <div className={styles.icon}>{entry.icon}</div>
-            <div className={styles.entryContent}>
-              <h3>{entry.title}</h3>
-            </div>
+            <h3>{entry.title}</h3>
           </div>
         ))}
       </div>
